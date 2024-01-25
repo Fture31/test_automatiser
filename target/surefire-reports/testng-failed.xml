@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" junit="true" name="Failed suite [Surefire suite]" verbose="0">
+  <test junit="true" thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.junit.runner.Description">
+        <methods>
+          <include name="test_a_null_b_normal_negatif_c_positif_tres_grand"/>
+          <include name="test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif"/>
+          <include name="test_a_null_b_tres_proche_zero_negatif_c_normal_positif"/>
+          <include name="test_a_null_b_null_c_negatif_tres_grand"/>
+          <include name="test_a_null_b_tres_proche_zero_positif_c_normal_negatif"/>
+          <include name="test_a_null_b_proche_zero_positif_c_null"/>
+          <include name="test_a_null_b_positif_tres_grand_c_proche_zero_negatif"/>
+          <include name="test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif"/>
+          <include name="test_a_null_b_normal_positif_c_proche_zero_positif"/>
+        </methods>
+      </class> <!-- org.junit.runner.Description -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

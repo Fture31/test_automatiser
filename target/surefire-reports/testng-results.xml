@@ -1,23 +1,894 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="92" passed="83" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-25T18:00:35 WAT" name="Surefire suite" finished-at="2024-01-25T18:01:10 WAT" duration-ms="35219">
+  <suite started-at="2024-01-25T19:09:44 WAT" name="Surefire suite" finished-at="2024-01-25T19:10:27 WAT" duration-ms="43209">
     <groups>
     </groups>
-    <test started-at="2024-01-25T18:00:35 WAT" name="Surefire test" finished-at="2024-01-25T18:01:10 WAT" duration-ms="35219">
+    <test started-at="2024-01-25T19:09:44 WAT" name="Surefire test" finished-at="2024-01-25T19:10:27 WAT" duration-ms="43209">
+      <class name="com.example.TestCases">
+        <test-method signature="test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_proche_zero_negatif_b_negatif_tres_grand_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_negatif_tres_grand_c_null" finished-at="2024-01-25T19:09:44 WAT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_negatif_tres_grand_c_null -->
+        <test-method signature="test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_null_b_tres_proche_zero_negatif_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_tres_proche_zero_negatif_c_normal_positif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="221" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<2.2310431465357116E8> but was:<4.482208251116821E-9>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<2.2310431465357116E8> but was:<4.482208251116821E-9>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_tres_proche_zero_negatif_c_normal_positif(TestCases.java:200)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_tres_proche_zero_negatif_c_normal_positif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif -->
+        <test-method signature="test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand" finished-at="2024-01-25T19:09:44 WAT" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_normal_positif_b_positif_tres_grand_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_positif_tres_grand_c_normal_positif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_positif_tres_grand_c_normal_positif -->
+        <test-method signature="test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand" finished-at="2024-01-25T19:09:44 WAT" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand -->
+        <test-method signature="test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif -->
+        <test-method signature="test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif -->
+        <test-method signature="test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null" finished-at="2024-01-25T19:09:44 WAT" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null -->
+        <test-method signature="test_a_null_b_tres_proche_zero_positif_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_tres_proche_zero_positif_c_normal_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="435" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<5.002003811009967E8> but was:<1.9991987966880167E-9>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<5.002003811009967E8> but was:<1.9991987966880167E-9>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_tres_proche_zero_positif_c_normal_negatif(TestCases.java:256)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_tres_proche_zero_positif_c_normal_negatif -->
+        <test-method signature="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif -->
+        <test-method signature="test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand" finished-at="2024-01-25T19:09:44 WAT" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand -->
+        <test-method signature="test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:44 WAT" duration-ms="477" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<-3.2342246428459196E-7> but was:<-3091931.174947889>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<-3.2342246428459196E-7> but was:<-3091931.174947889>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif(TestCases.java:216)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand" finished-at="2024-01-25T19:09:44 WAT" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand -->
+        <test-method signature="test_a_null_b_normal_positif_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_normal_positif_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="552" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<-0.004638477876619339> but was:<-215.58796368105777>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<-0.004638477876619339> but was:<-215.58796368105777>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_normal_positif_c_proche_zero_positif(TestCases.java:224)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_normal_positif_c_proche_zero_positif -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand -->
+        <test-method signature="test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_proche_zero_negatif_b_null_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_null_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_null_c_proche_zero_positif -->
+        <test-method signature="test_a_positif_tres_grand_b_normal_negatif_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_normal_negatif_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_normal_negatif_c_normal_positif -->
+        <test-method signature="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif -->
+        <test-method signature="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif -->
+        <test-method signature="test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null" finished-at="2024-01-25T19:09:45 WAT" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null -->
+        <test-method signature="test_a_normal_positif_b_normal_negatif_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_normal_negatif_c_null" finished-at="2024-01-25T19:09:45 WAT" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_normal_negatif_c_null -->
+        <test-method signature="test_a_proche_zero_positif_b_proche_zero_negatif_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_proche_zero_negatif_c_null" finished-at="2024-01-25T19:09:45 WAT" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_proche_zero_negatif_c_null -->
+        <test-method signature="test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif -->
+        <test-method signature="test_a_positif_tres_grand_b_null_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_null_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_null_c_positif_tres_grand -->
+        <test-method signature="test_a_null_b_positif_tres_grand_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_positif_tres_grand_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="807" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<2.4466366339456265E-9> but was:<4.087243631218447E8>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<2.4466366339456265E-9> but was:<4.087243631218447E8>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_positif_tres_grand_c_proche_zero_negatif(TestCases.java:240)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_positif_tres_grand_c_proche_zero_negatif -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif -->
+        <test-method signature="test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif -->
+        <test-method signature="test_a_normal_positif_b_normal_positif_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_normal_positif_c_normal_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_normal_positif_c_normal_negatif -->
+        <test-method signature="test_a_normal_negatif_b_null_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_null_c_normal_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_null_c_normal_negatif -->
+        <test-method signature="test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand -->
+        <test-method signature="test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand -->
+        <test-method signature="test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif -->
+        <test-method signature="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand -->
+        <test-method signature="test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif -->
+        <test-method signature="test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif -->
+        <test-method signature="test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif -->
+        <test-method signature="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null" finished-at="2024-01-25T19:09:45 WAT" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null -->
+        <test-method signature="test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif -->
+        <test-method signature="test_a_normal_positif_b_null_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_positif_b_null_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_positif_b_null_c_normal_positif -->
+        <test-method signature="test_a_null_b_null_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_null_c_negatif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="898" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<Infinity> but was:<0.0>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<Infinity> but was:<0.0>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_null_c_negatif_tres_grand(TestCases.java:128)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_null_c_negatif_tres_grand -->
+        <test-method signature="test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif -->
+        <test-method signature="test_a_proche_zero_negatif_b_normal_positif_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_normal_positif_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_normal_positif_c_normal_positif -->
+        <test-method signature="test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="931" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<1.6806347941034085E-15> but was:<5.950132673133689E14>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<1.6806347941034085E-15> but was:<5.950132673133689E14>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif(TestCases.java:248)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_null_b_normal_negatif_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_normal_negatif_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="943" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<1026975.7894841089> but was:<9.737327892630653E-7>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<1026975.7894841089> but was:<9.737327892630653E-7>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_normal_negatif_c_positif_tres_grand(TestCases.java:232)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_normal_negatif_c_positif_tres_grand -->
+        <test-method signature="test_a_null_b_proche_zero_positif_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_null_b_proche_zero_positif_c_null" finished-at="2024-01-25T19:09:45 WAT" duration-ms="937" status="FAIL">
+          <exception class="org.junit.internal.ArrayComparisonFailure">
+            <message>
+              <![CDATA[arrays first differed at element [0]; expected:<-0.0> but was:<-Infinity>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[arrays first differed at element [0]; expected:<-0.0> but was:<-Infinity>
+at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+at org.junit.Assert.assertArrayEquals(Assert.java:419)
+at org.junit.Assert.assertArrayEquals(Assert.java:430)
+at com.example.TestCases.test_a_null_b_proche_zero_positif_c_null(TestCases.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+at org.testng.TestRunner$1.run(TestRunner.java:691)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+at org.testng.TestRunner.run(TestRunner.java:600)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.internal.ArrayComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_null_b_proche_zero_positif_c_null -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_null_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_null_c_null" finished-at="2024-01-25T19:09:45 WAT" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_null_c_null -->
+        <test-method signature="test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif -->
+        <test-method signature="test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand -->
+        <test-method signature="test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand -->
+        <test-method signature="test_a_normal_negatif_b_normal_positif_c_null() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_normal_positif_c_null" finished-at="2024-01-25T19:09:45 WAT" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_normal_positif_c_null -->
+        <test-method signature="test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand -->
+        <test-method signature="test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand -->
+        <test-method signature="test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif -->
+        <test-method signature="test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif -->
+        <test-method signature="test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif -->
+        <test-method signature="test_a_normal_negatif_b_proche_zero_positif_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_proche_zero_positif_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_proche_zero_positif_c_normal_positif -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif -->
+        <test-method signature="test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif -->
+        <test-method signature="test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand -->
+        <test-method signature="test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif -->
+        <test-method signature="test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand" finished-at="2024-01-25T19:09:45 WAT" duration-ms="981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand -->
+        <test-method signature="test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif -->
+        <test-method signature="test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException" started-at="2024-01-25T19:09:44 WAT" name="test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif" finished-at="2024-01-25T19:09:45 WAT" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif -->
+      </class> <!-- com.example.TestCases -->
       <class name="com.example.AppTest">
-        <test-method signature="shouldAnswerWithTrue()" started-at="2024-01-25T18:00:56 WAT" name="shouldAnswerWithTrue" finished-at="2024-01-25T18:00:56 WAT" duration-ms="1" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()" started-at="2024-01-25T19:10:06 WAT" name="shouldAnswerWithTrue" finished-at="2024-01-25T19:10:06 WAT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- com.example.AppTest -->
       <class name="com.example.TestSolver">
-        <test-method signature="buildTestSolver1()" started-at="2024-01-25T18:00:35 WAT" name="buildTestSolver1" finished-at="2024-01-25T18:00:52 WAT" duration-ms="16986" status="PASS">
+        <test-method signature="buildTestSolver1()" started-at="2024-01-25T19:09:45 WAT" name="buildTestSolver1" finished-at="2024-01-25T19:09:57 WAT" duration-ms="12283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buildTestSolver1 -->
-        <test-method signature="buildTestSolver()" started-at="2024-01-25T18:00:35 WAT" name="buildTestSolver" finished-at="2024-01-25T18:00:56 WAT" duration-ms="21101" status="PASS">
+        <test-method signature="buildTestSolver()" started-at="2024-01-25T19:09:45 WAT" name="buildTestSolver" finished-at="2024-01-25T19:10:06 WAT" duration-ms="20789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buildTestSolver -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>83/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 25 18:00:35 WAT 2024</td>
+<td>Started on:</td><td>Thu Jan 25 19:09:44 WAT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35219 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43209 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,28 +67,1122 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.TestSolver.buildTestSolver()'><b>buildTestSolver</b><br>Test class: com.example.TestSolver</td>
-<td></td>
-<td>21</td>
-<td>buildTestSolver(com.example.TestSolver)</td></tr>
+<td title='com.example.TestCases.test_a_null_b_tres_proche_zero_negatif_c_normal_positif()'><b>test_a_null_b_tres_proche_zero_negatif_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;2.2310431465357116E8&gt; but was:&lt;4.482208251116821E-9&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_negatif_c_normal_positif(TestCases.java:200)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace858952163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace858952163'><pre>arrays first differed at element [0]; expected:&lt;2.2310431465357116E8&gt; but was:&lt;4.482208251116821E-9&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_negatif_c_normal_positif(TestCases.java:200)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_tres_proche_zero_negatif_c_normal_positif(com.example.TestCases)</td></tr>
 <tr>
-<td title='com.example.TestSolver.buildTestSolver1()'><b>buildTestSolver1</b><br>Test class: com.example.TestSolver</td>
-<td></td>
-<td>16</td>
-<td>buildTestSolver1(com.example.TestSolver)</td></tr>
+<td title='com.example.TestCases.test_a_null_b_positif_tres_grand_c_proche_zero_negatif()'><b>test_a_null_b_positif_tres_grand_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;2.4466366339456265E-9&gt; but was:&lt;4.087243631218447E8&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_positif_tres_grand_c_proche_zero_negatif(TestCases.java:240)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace692331943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace692331943'><pre>arrays first differed at element [0]; expected:&lt;2.4466366339456265E-9&gt; but was:&lt;4.087243631218447E8&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_positif_tres_grand_c_proche_zero_negatif(TestCases.java:240)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_positif_tres_grand_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif()'><b>test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;1.6806347941034085E-15&gt; but was:&lt;5.950132673133689E14&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif(TestCases.java:248)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1364767791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1364767791'><pre>arrays first differed at element [0]; expected:&lt;1.6806347941034085E-15&gt; but was:&lt;5.950132673133689E14&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif(TestCases.java:248)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_null_b_tres_proche_zero_positif_c_normal_negatif()'><b>test_a_null_b_tres_proche_zero_positif_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;5.002003811009967E8&gt; but was:&lt;1.9991987966880167E-9&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_positif_c_normal_negatif(TestCases.java:256)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1712943792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1712943792'><pre>arrays first differed at element [0]; expected:&lt;5.002003811009967E8&gt; but was:&lt;1.9991987966880167E-9&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_positif_c_normal_negatif(TestCases.java:256)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_tres_proche_zero_positif_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_null_b_normal_positif_c_proche_zero_positif()'><b>test_a_null_b_normal_positif_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;-0.004638477876619339&gt; but was:&lt;-215.58796368105777&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_normal_positif_c_proche_zero_positif(TestCases.java:224)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1610525991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1610525991'><pre>arrays first differed at element [0]; expected:&lt;-0.004638477876619339&gt; but was:&lt;-215.58796368105777&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_normal_positif_c_proche_zero_positif(TestCases.java:224)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_normal_positif_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_null_b_null_c_negatif_tres_grand()'><b>test_a_null_b_null_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;Infinity&gt; but was:&lt;0.0&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_null_c_negatif_tres_grand(TestCases.java:128)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1364913072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1364913072'><pre>arrays first differed at element [0]; expected:&lt;Infinity&gt; but was:&lt;0.0&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_null_c_negatif_tres_grand(TestCases.java:128)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_null_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif()'><b>test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;-3.2342246428459196E-7&gt; but was:&lt;-3091931.174947889&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif(TestCases.java:216)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace842741472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace842741472'><pre>arrays first differed at element [0]; expected:&lt;-3.2342246428459196E-7&gt; but was:&lt;-3091931.174947889&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif(TestCases.java:216)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_null_b_normal_negatif_c_positif_tres_grand()'><b>test_a_null_b_normal_negatif_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;1026975.7894841089&gt; but was:&lt;9.737327892630653E-7&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_normal_negatif_c_positif_tres_grand(TestCases.java:232)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1199673596", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1199673596'><pre>arrays first differed at element [0]; expected:&lt;1026975.7894841089&gt; but was:&lt;9.737327892630653E-7&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_normal_negatif_c_positif_tres_grand(TestCases.java:232)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_normal_negatif_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_null_b_proche_zero_positif_c_null()'><b>test_a_null_b_proche_zero_positif_c_null</b><br>Test class: com.example.TestCases</td>
+<td><div><pre>arrays first differed at element [0]; expected:&lt;-0.0&gt; but was:&lt;-Infinity&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_proche_zero_positif_c_null(TestCases.java:56)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1926343982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1926343982'><pre>arrays first differed at element [0]; expected:&lt;-0.0&gt; but was:&lt;-Infinity&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_proche_zero_positif_c_null(TestCases.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:76)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:61)
+	at org.testng.TestRunner$1.run(TestRunner.java:691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:908)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:720)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>test_a_null_b_proche_zero_positif_c_null(com.example.TestCases)</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.example.AppTest.shouldAnswerWithTrue()'><b>shouldAnswerWithTrue</b><br>Test class: com.example.AppTest</td>
 <td></td>
 <td>0</td>
 <td>shouldAnswerWithTrue(com.example.AppTest)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_normal_positif_c_normal_negatif()'><b>test_a_normal_positif_b_normal_positif_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_normal_positif_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif()'><b>test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif()'><b>test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_null_c_null()'><b>test_a_tres_proche_zero_positif_b_null_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_null_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_normal_positif_c_null()'><b>test_a_normal_negatif_b_normal_positif_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_normal_positif_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif()'><b>test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_null_c_positif_tres_grand()'><b>test_a_positif_tres_grand_b_null_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_null_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif()'><b>test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif()'><b>test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_proche_zero_negatif_c_null()'><b>test_a_proche_zero_positif_b_proche_zero_negatif_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_proche_zero_negatif_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_null_c_proche_zero_positif()'><b>test_a_proche_zero_negatif_b_null_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_null_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif()'><b>test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif()'><b>test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif()'><b>test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif()'><b>test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif()'><b>test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif()'><b>test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand()'><b>test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand()'><b>test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif()'><b>test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif()'><b>test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif()'><b>test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif()'><b>test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_positif_tres_grand_c_normal_positif()'><b>test_a_normal_positif_b_positif_tres_grand_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_positif_tres_grand_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand()'><b>test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_proche_zero_positif_c_normal_positif()'><b>test_a_normal_negatif_b_proche_zero_positif_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_proche_zero_positif_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif()'><b>test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif()'><b>test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>1</td>
+<td>test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif()'><b>test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_negatif_tres_grand_c_null()'><b>test_a_proche_zero_negatif_b_negatif_tres_grand_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_negatif_tres_grand_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_normal_negatif_c_normal_positif()'><b>test_a_positif_tres_grand_b_normal_negatif_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_normal_negatif_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand()'><b>test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand()'><b>test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif()'><b>test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif()'><b>test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif()'><b>test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif()'><b>test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif()'><b>test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestSolver.buildTestSolver()'><b>buildTestSolver</b><br>Test class: com.example.TestSolver</td>
+<td></td>
+<td>20</td>
+<td>buildTestSolver(com.example.TestSolver)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif()'><b>test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand()'><b>test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand()'><b>test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif()'><b>test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null()'><b>test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand()'><b>test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand()'><b>test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif()'><b>test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif()'><b>test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif()'><b>test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif()'><b>test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif()'><b>test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand()'><b>test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif()'><b>test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif()'><b>test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif()'><b>test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif()'><b>test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_negatif_b_normal_positif_c_normal_positif()'><b>test_a_proche_zero_negatif_b_normal_positif_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_negatif_b_normal_positif_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null()'><b>test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand()'><b>test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif()'><b>test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand()'><b>test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand()'><b>test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand()'><b>test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif()'><b>test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif()'><b>test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif()'><b>test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif()'><b>test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null()'><b>test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif()'><b>test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestSolver.buildTestSolver1()'><b>buildTestSolver1</b><br>Test class: com.example.TestSolver</td>
+<td></td>
+<td>12</td>
+<td>buildTestSolver1(com.example.TestSolver)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif()'><b>test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_null_c_normal_negatif()'><b>test_a_normal_negatif_b_null_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_null_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif()'><b>test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand()'><b>test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif()'><b>test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif()'><b>test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_null_c_normal_positif()'><b>test_a_normal_positif_b_null_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_null_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand()'><b>test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif()'><b>test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif()'><b>test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_normal_positif_b_normal_negatif_c_null()'><b>test_a_normal_positif_b_normal_negatif_c_null</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_normal_positif_b_normal_negatif_c_null(com.example.TestCases)</td></tr>
+<tr>
+<td title='com.example.TestCases.test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif()'><b>test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif</b><br>Test class: com.example.TestCases</td>
+<td></td>
+<td>0</td>
+<td>test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif(com.example.TestCases)</td></tr>
 </table><p>
 </body>
 </html>

@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,11 +21,11 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +92,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">92 methods, 9 failed,   83 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif">test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_normal_negatif_c_positif_tres_grand">test_a_null_b_normal_negatif_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_normal_positif_c_proche_zero_positif">test_a_null_b_normal_positif_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_null_c_negatif_tres_grand">test_a_null_b_null_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_positif_tres_grand_c_proche_zero_negatif">test_a_null_b_positif_tres_grand_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif">test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_proche_zero_positif_c_null">test_a_null_b_proche_zero_positif_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_tres_proche_zero_negatif_c_normal_positif">test_a_null_b_tres_proche_zero_negatif_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_null_b_tres_proche_zero_positif_c_normal_negatif">test_a_null_b_tres_proche_zero_positif_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +170,406 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="com.example.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue">shouldAnswerWithTrue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif">test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif">test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif">test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif">test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif">test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand">test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif">test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand">test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif">test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null">test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif">test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif">test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_normal_positif_c_null">test_a_normal_negatif_b_normal_positif_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_null_c_normal_negatif">test_a_normal_negatif_b_null_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand">test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand">test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_proche_zero_positif_c_normal_positif">test_a_normal_negatif_b_proche_zero_positif_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif">test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif">test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand">test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_normal_negatif_c_null">test_a_normal_positif_b_normal_negatif_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_normal_positif_c_normal_negatif">test_a_normal_positif_b_normal_positif_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_null_c_normal_positif">test_a_normal_positif_b_null_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_positif_tres_grand_c_normal_positif">test_a_normal_positif_b_positif_tres_grand_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif">test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif">test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif">test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand">test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif">test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif">test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_normal_negatif_c_normal_positif">test_a_positif_tres_grand_b_normal_negatif_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand">test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_null_c_positif_tres_grand">test_a_positif_tres_grand_b_null_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif">test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif">test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif">test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif">test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null">test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif">test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand">test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_negatif_tres_grand_c_null">test_a_proche_zero_negatif_b_negatif_tres_grand_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand">test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_normal_positif_c_normal_positif">test_a_proche_zero_negatif_b_normal_positif_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_null_c_proche_zero_positif">test_a_proche_zero_negatif_b_null_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif">test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif">test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif">test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif">test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif">test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand">test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand">test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif">test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif">test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif">test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif">test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_proche_zero_negatif_c_null">test_a_proche_zero_positif_b_proche_zero_negatif_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand">test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif">test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif">test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif">test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif">test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif">test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif">test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif">test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand">test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif">test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null">test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif">test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif">test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand">test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif">test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif">test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif">test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif">test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_null_c_null">test_a_tres_proche_zero_positif_b_null_c_null</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif">test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif">test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand">test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand">test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TestCases" class="method navigator-link" hash-for-method="test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif">test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
@@ -127,6 +582,867 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.TestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;1.6806347941034085E-15&gt; but was:&lt;5.950132673133689E14&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif(TestCases.java:248)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_normal_negatif_c_positif_tres_grand">
+                  </a> <!-- test_a_null_b_normal_negatif_c_positif_tres_grand -->
+                  <span class="method-name">test_a_null_b_normal_negatif_c_positif_tres_grand</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;1026975.7894841089&gt; but was:&lt;9.737327892630653E-7&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_normal_negatif_c_positif_tres_grand(TestCases.java:232)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_normal_positif_c_proche_zero_positif">
+                  </a> <!-- test_a_null_b_normal_positif_c_proche_zero_positif -->
+                  <span class="method-name">test_a_null_b_normal_positif_c_proche_zero_positif</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;-0.004638477876619339&gt; but was:&lt;-215.58796368105777&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_normal_positif_c_proche_zero_positif(TestCases.java:224)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_null_c_negatif_tres_grand">
+                  </a> <!-- test_a_null_b_null_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_null_b_null_c_negatif_tres_grand</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;Infinity&gt; but was:&lt;0.0&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_null_c_negatif_tres_grand(TestCases.java:128)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_positif_tres_grand_c_proche_zero_negatif">
+                  </a> <!-- test_a_null_b_positif_tres_grand_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_null_b_positif_tres_grand_c_proche_zero_negatif</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;2.4466366339456265E-9&gt; but was:&lt;4.087243631218447E8&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_positif_tres_grand_c_proche_zero_negatif(TestCases.java:240)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;-3.2342246428459196E-7&gt; but was:&lt;-3091931.174947889&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif(TestCases.java:216)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_proche_zero_positif_c_null">
+                  </a> <!-- test_a_null_b_proche_zero_positif_c_null -->
+                  <span class="method-name">test_a_null_b_proche_zero_positif_c_null</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;-0.0&gt; but was:&lt;-Infinity&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_proche_zero_positif_c_null(TestCases.java:56)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_tres_proche_zero_negatif_c_normal_positif">
+                  </a> <!-- test_a_null_b_tres_proche_zero_negatif_c_normal_positif -->
+                  <span class="method-name">test_a_null_b_tres_proche_zero_negatif_c_normal_positif</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;2.2310431465357116E8&gt; but was:&lt;4.482208251116821E-9&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_negatif_c_normal_positif(TestCases.java:200)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_null_b_tres_proche_zero_positif_c_normal_negatif">
+                  </a> <!-- test_a_null_b_tres_proche_zero_positif_c_normal_negatif -->
+                  <span class="method-name">test_a_null_b_tres_proche_zero_positif_c_normal_negatif</span>
+                  <div class="stack-trace">arrays first differed at element [0]; expected:&lt;5.002003811009967E8&gt; but was:&lt;1.9991987966880167E-9&gt;
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:50)
+	at org.junit.Assert.assertArrayEquals(Assert.java:419)
+	at org.junit.Assert.assertArrayEquals(Assert.java:430)
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_positif_c_normal_negatif(TestCases.java:256)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldAnswerWithTrue">
+                  </a> <!-- shouldAnswerWithTrue -->
+                  <span class="method-name">shouldAnswerWithTrue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.TestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif">
+                  </a> <!-- test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif">
+                  </a> <!-- test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif">
+                  </a> <!-- test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand">
+                  </a> <!-- test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand">
+                  </a> <!-- test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif">
+                  </a> <!-- test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null">
+                  </a> <!-- test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null -->
+                  <span class="method-name">test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_normal_positif_c_null">
+                  </a> <!-- test_a_normal_negatif_b_normal_positif_c_null -->
+                  <span class="method-name">test_a_normal_negatif_b_normal_positif_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_null_c_normal_negatif">
+                  </a> <!-- test_a_normal_negatif_b_null_c_normal_negatif -->
+                  <span class="method-name">test_a_normal_negatif_b_null_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand">
+                  </a> <!-- test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand -->
+                  <span class="method-name">test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand">
+                  </a> <!-- test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_proche_zero_positif_c_normal_positif">
+                  </a> <!-- test_a_normal_negatif_b_proche_zero_positif_c_normal_positif -->
+                  <span class="method-name">test_a_normal_negatif_b_proche_zero_positif_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif">
+                  </a> <!-- test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif -->
+                  <span class="method-name">test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif">
+                  </a> <!-- test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand">
+                  </a> <!-- test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand -->
+                  <span class="method-name">test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_normal_negatif_c_null">
+                  </a> <!-- test_a_normal_positif_b_normal_negatif_c_null -->
+                  <span class="method-name">test_a_normal_positif_b_normal_negatif_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_normal_positif_c_normal_negatif">
+                  </a> <!-- test_a_normal_positif_b_normal_positif_c_normal_negatif -->
+                  <span class="method-name">test_a_normal_positif_b_normal_positif_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_null_c_normal_positif">
+                  </a> <!-- test_a_normal_positif_b_null_c_normal_positif -->
+                  <span class="method-name">test_a_normal_positif_b_null_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_positif_tres_grand_c_normal_positif">
+                  </a> <!-- test_a_normal_positif_b_positif_tres_grand_c_normal_positif -->
+                  <span class="method-name">test_a_normal_positif_b_positif_tres_grand_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif">
+                  </a> <!-- test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand">
+                  </a> <!-- test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif">
+                  </a> <!-- test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif -->
+                  <span class="method-name">test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif">
+                  </a> <!-- test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif -->
+                  <span class="method-name">test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_normal_negatif_c_normal_positif">
+                  </a> <!-- test_a_positif_tres_grand_b_normal_negatif_c_normal_positif -->
+                  <span class="method-name">test_a_positif_tres_grand_b_normal_negatif_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand">
+                  </a> <!-- test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_null_c_positif_tres_grand">
+                  </a> <!-- test_a_positif_tres_grand_b_null_c_positif_tres_grand -->
+                  <span class="method-name">test_a_positif_tres_grand_b_null_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif">
+                  </a> <!-- test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif -->
+                  <span class="method-name">test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif">
+                  </a> <!-- test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif -->
+                  <span class="method-name">test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null">
+                  </a> <!-- test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null -->
+                  <span class="method-name">test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif">
+                  </a> <!-- test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand">
+                  </a> <!-- test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_negatif_tres_grand_c_null">
+                  </a> <!-- test_a_proche_zero_negatif_b_negatif_tres_grand_c_null -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_negatif_tres_grand_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand">
+                  </a> <!-- test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_normal_positif_c_normal_positif">
+                  </a> <!-- test_a_proche_zero_negatif_b_normal_positif_c_normal_positif -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_normal_positif_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_null_c_proche_zero_positif">
+                  </a> <!-- test_a_proche_zero_negatif_b_null_c_proche_zero_positif -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_null_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif">
+                  </a> <!-- test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif">
+                  </a> <!-- test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif">
+                  </a> <!-- test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand">
+                  </a> <!-- test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand -->
+                  <span class="method-name">test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand">
+                  </a> <!-- test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif">
+                  </a> <!-- test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif -->
+                  <span class="method-name">test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif">
+                  </a> <!-- test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif">
+                  </a> <!-- test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif -->
+                  <span class="method-name">test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_proche_zero_negatif_c_null">
+                  </a> <!-- test_a_proche_zero_positif_b_proche_zero_negatif_c_null -->
+                  <span class="method-name">test_a_proche_zero_positif_b_proche_zero_negatif_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand">
+                  </a> <!-- test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand -->
+                  <span class="method-name">test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif">
+                  </a> <!-- test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif -->
+                  <span class="method-name">test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif">
+                  </a> <!-- test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_null_c_null">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_null_c_null -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_null_c_null</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif">
+                  </a> <!-- test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif -->
+                  <span class="method-name">test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -149,21 +1465,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.AppTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldAnswerWithTrue">
-                  </a> <!-- shouldAnswerWithTrue -->
-                  <span class="method-name">shouldAnswerWithTrue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -175,6 +1476,7 @@
 &lt;suite thread-count=&quot;1&quot; junit=&quot;true&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test junit=&quot;true&quot; thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.example.TestCases&quot;/&gt;
       &lt;class name=&quot;com.example.TestSolver&quot;/&gt;
       &lt;class name=&quot;com.example.AppTest&quot;/&gt;
       &lt;class name=&quot;com.example.stepTest&quot;/&gt;
@@ -191,7 +1493,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (3 classes)</span>
+                <span class="test-name">Surefire test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,24 +1519,380 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(92);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'buildTestSolver')
 data.setCell(0, 2, 'com.example.TestSolver')
-data.setCell(0, 3, 21101);
+data.setCell(0, 3, 20789);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'buildTestSolver1')
 data.setCell(1, 2, 'com.example.TestSolver')
-data.setCell(1, 3, 16986);
+data.setCell(1, 3, 12283);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'shouldAnswerWithTrue')
-data.setCell(2, 2, 'com.example.AppTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif')
+data.setCell(2, 2, 'com.example.TestCases')
+data.setCell(2, 3, 1033);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif')
+data.setCell(3, 2, 'com.example.TestCases')
+data.setCell(3, 3, 992);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif')
+data.setCell(4, 2, 'com.example.TestCases')
+data.setCell(4, 3, 990);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand')
+data.setCell(5, 2, 'com.example.TestCases')
+data.setCell(5, 3, 981);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif')
+data.setCell(6, 2, 'com.example.TestCases')
+data.setCell(6, 3, 975);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test_a_normal_negatif_b_proche_zero_positif_c_normal_positif')
+data.setCell(7, 2, 'com.example.TestCases')
+data.setCell(7, 3, 973);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand')
+data.setCell(8, 2, 'com.example.TestCases')
+data.setCell(8, 3, 973);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif')
+data.setCell(9, 2, 'com.example.TestCases')
+data.setCell(9, 3, 971);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif')
+data.setCell(10, 2, 'com.example.TestCases')
+data.setCell(10, 3, 969);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand')
+data.setCell(11, 2, 'com.example.TestCases')
+data.setCell(11, 3, 968);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif')
+data.setCell(12, 2, 'com.example.TestCases')
+data.setCell(12, 3, 968);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand')
+data.setCell(13, 2, 'com.example.TestCases')
+data.setCell(13, 3, 967);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif')
+data.setCell(14, 2, 'com.example.TestCases')
+data.setCell(14, 3, 965);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test_a_normal_negatif_b_normal_positif_c_null')
+data.setCell(15, 2, 'com.example.TestCases')
+data.setCell(15, 3, 960);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif')
+data.setCell(16, 2, 'com.example.TestCases')
+data.setCell(16, 3, 957);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif')
+data.setCell(17, 2, 'com.example.TestCases')
+data.setCell(17, 3, 952);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif')
+data.setCell(18, 2, 'com.example.TestCases')
+data.setCell(18, 3, 952);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand')
+data.setCell(19, 2, 'com.example.TestCases')
+data.setCell(19, 3, 951);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand')
+data.setCell(20, 2, 'com.example.TestCases')
+data.setCell(20, 3, 945);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'test_a_tres_proche_zero_positif_b_null_c_null')
+data.setCell(21, 2, 'com.example.TestCases')
+data.setCell(21, 3, 944);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test_a_null_b_normal_negatif_c_positif_tres_grand')
+data.setCell(22, 2, 'com.example.TestCases')
+data.setCell(22, 3, 943);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'test_a_proche_zero_negatif_b_normal_positif_c_normal_positif')
+data.setCell(23, 2, 'com.example.TestCases')
+data.setCell(23, 3, 941);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif')
+data.setCell(24, 2, 'com.example.TestCases')
+data.setCell(24, 3, 940);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif')
+data.setCell(25, 2, 'com.example.TestCases')
+data.setCell(25, 3, 939);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test_a_null_b_proche_zero_positif_c_null')
+data.setCell(26, 2, 'com.example.TestCases')
+data.setCell(26, 3, 937);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand')
+data.setCell(27, 2, 'com.example.TestCases')
+data.setCell(27, 3, 935);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif')
+data.setCell(28, 2, 'com.example.TestCases')
+data.setCell(28, 3, 931);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif')
+data.setCell(29, 2, 'com.example.TestCases')
+data.setCell(29, 3, 928);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif')
+data.setCell(30, 2, 'com.example.TestCases')
+data.setCell(30, 3, 927);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'test_a_normal_positif_b_null_c_normal_positif')
+data.setCell(31, 2, 'com.example.TestCases')
+data.setCell(31, 3, 926);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif')
+data.setCell(32, 2, 'com.example.TestCases')
+data.setCell(32, 3, 925);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif')
+data.setCell(33, 2, 'com.example.TestCases')
+data.setCell(33, 3, 918);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif')
+data.setCell(34, 2, 'com.example.TestCases')
+data.setCell(34, 3, 917);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif')
+data.setCell(35, 2, 'com.example.TestCases')
+data.setCell(35, 3, 913);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'test_a_null_b_null_c_negatif_tres_grand')
+data.setCell(36, 2, 'com.example.TestCases')
+data.setCell(36, 3, 898);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null')
+data.setCell(37, 2, 'com.example.TestCases')
+data.setCell(37, 3, 896);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif')
+data.setCell(38, 2, 'com.example.TestCases')
+data.setCell(38, 3, 892);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand')
+data.setCell(39, 2, 'com.example.TestCases')
+data.setCell(39, 3, 867);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand')
+data.setCell(40, 2, 'com.example.TestCases')
+data.setCell(40, 3, 866);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif')
+data.setCell(41, 2, 'com.example.TestCases')
+data.setCell(41, 3, 856);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif')
+data.setCell(42, 2, 'com.example.TestCases')
+data.setCell(42, 3, 847);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand')
+data.setCell(43, 2, 'com.example.TestCases')
+data.setCell(43, 3, 834);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif')
+data.setCell(44, 2, 'com.example.TestCases')
+data.setCell(44, 3, 833);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'test_a_normal_positif_b_normal_positif_c_normal_negatif')
+data.setCell(45, 2, 'com.example.TestCases')
+data.setCell(45, 3, 831);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand')
+data.setCell(46, 2, 'com.example.TestCases')
+data.setCell(46, 3, 831);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'test_a_normal_negatif_b_null_c_normal_negatif')
+data.setCell(47, 2, 'com.example.TestCases')
+data.setCell(47, 3, 830);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif')
+data.setCell(48, 2, 'com.example.TestCases')
+data.setCell(48, 3, 829);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif')
+data.setCell(49, 2, 'com.example.TestCases')
+data.setCell(49, 3, 828);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif')
+data.setCell(50, 2, 'com.example.TestCases')
+data.setCell(50, 3, 827);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'test_a_null_b_positif_tres_grand_c_proche_zero_negatif')
+data.setCell(51, 2, 'com.example.TestCases')
+data.setCell(51, 3, 807);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'test_a_positif_tres_grand_b_null_c_positif_tres_grand')
+data.setCell(52, 2, 'com.example.TestCases')
+data.setCell(52, 3, 791);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif')
+data.setCell(53, 2, 'com.example.TestCases')
+data.setCell(53, 3, 777);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif')
+data.setCell(54, 2, 'com.example.TestCases')
+data.setCell(54, 3, 773);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif')
+data.setCell(55, 2, 'com.example.TestCases')
+data.setCell(55, 3, 773);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif')
+data.setCell(56, 2, 'com.example.TestCases')
+data.setCell(56, 3, 772);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'test_a_proche_zero_positif_b_proche_zero_negatif_c_null')
+data.setCell(57, 2, 'com.example.TestCases')
+data.setCell(57, 3, 771);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'test_a_normal_positif_b_normal_negatif_c_null')
+data.setCell(58, 2, 'com.example.TestCases')
+data.setCell(58, 3, 728);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null')
+data.setCell(59, 2, 'com.example.TestCases')
+data.setCell(59, 3, 725);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif')
+data.setCell(60, 2, 'com.example.TestCases')
+data.setCell(60, 3, 710);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'test_a_positif_tres_grand_b_normal_negatif_c_normal_positif')
+data.setCell(61, 2, 'com.example.TestCases')
+data.setCell(61, 3, 695);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif')
+data.setCell(62, 2, 'com.example.TestCases')
+data.setCell(62, 3, 687);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'test_a_proche_zero_negatif_b_null_c_proche_zero_positif')
+data.setCell(63, 2, 'com.example.TestCases')
+data.setCell(63, 3, 652);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif')
+data.setCell(64, 2, 'com.example.TestCases')
+data.setCell(64, 3, 637);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand')
+data.setCell(65, 2, 'com.example.TestCases')
+data.setCell(65, 3, 625);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif')
+data.setCell(66, 2, 'com.example.TestCases')
+data.setCell(66, 3, 593);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif')
+data.setCell(67, 2, 'com.example.TestCases')
+data.setCell(67, 3, 571);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'test_a_null_b_normal_positif_c_proche_zero_positif')
+data.setCell(68, 2, 'com.example.TestCases')
+data.setCell(68, 3, 552);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand')
+data.setCell(69, 2, 'com.example.TestCases')
+data.setCell(69, 3, 534);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand')
+data.setCell(70, 2, 'com.example.TestCases')
+data.setCell(70, 3, 529);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif')
+data.setCell(71, 2, 'com.example.TestCases')
+data.setCell(71, 3, 523);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif')
+data.setCell(72, 2, 'com.example.TestCases')
+data.setCell(72, 3, 505);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif')
+data.setCell(73, 2, 'com.example.TestCases')
+data.setCell(73, 3, 477);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif')
+data.setCell(74, 2, 'com.example.TestCases')
+data.setCell(74, 3, 475);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'test_a_null_b_tres_proche_zero_positif_c_normal_negatif')
+data.setCell(75, 2, 'com.example.TestCases')
+data.setCell(75, 3, 435);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null')
+data.setCell(76, 2, 'com.example.TestCases')
+data.setCell(76, 3, 400);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif')
+data.setCell(77, 2, 'com.example.TestCases')
+data.setCell(77, 3, 396);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'test_a_normal_positif_b_positif_tres_grand_c_normal_positif')
+data.setCell(78, 2, 'com.example.TestCases')
+data.setCell(78, 3, 394);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand')
+data.setCell(79, 2, 'com.example.TestCases')
+data.setCell(79, 3, 390);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif')
+data.setCell(80, 2, 'com.example.TestCases')
+data.setCell(80, 3, 383);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand')
+data.setCell(81, 2, 'com.example.TestCases')
+data.setCell(81, 3, 364);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif')
+data.setCell(82, 2, 'com.example.TestCases')
+data.setCell(82, 3, 352);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif')
+data.setCell(83, 2, 'com.example.TestCases')
+data.setCell(83, 3, 330);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif')
+data.setCell(84, 2, 'com.example.TestCases')
+data.setCell(84, 3, 306);
+data.setCell(85, 0, 85)
+data.setCell(85, 1, 'test_a_null_b_tres_proche_zero_negatif_c_normal_positif')
+data.setCell(85, 2, 'com.example.TestCases')
+data.setCell(85, 3, 221);
+data.setCell(86, 0, 86)
+data.setCell(86, 1, 'test_a_proche_zero_negatif_b_negatif_tres_grand_c_null')
+data.setCell(86, 2, 'com.example.TestCases')
+data.setCell(86, 3, 217);
+data.setCell(87, 0, 87)
+data.setCell(87, 1, 'test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif')
+data.setCell(87, 2, 'com.example.TestCases')
+data.setCell(87, 3, 216);
+data.setCell(88, 0, 88)
+data.setCell(88, 1, 'test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif')
+data.setCell(88, 2, 'com.example.TestCases')
+data.setCell(88, 3, 209);
+data.setCell(89, 0, 89)
+data.setCell(89, 1, 'test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif')
+data.setCell(89, 2, 'com.example.TestCases')
+data.setCell(89, 3, 207);
+data.setCell(90, 0, 90)
+data.setCell(90, 1, 'test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif')
+data.setCell(90, 2, 'com.example.TestCases')
+data.setCell(90, 3, 137);
+data.setCell(91, 0, 91)
+data.setCell(91, 1, 'shouldAnswerWithTrue')
+data.setCell(91, 2, 'com.example.AppTest')
+data.setCell(91, 3, 3);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -260,25 +1918,403 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.TestSolver</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.TestCases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">buildTestSolver1</span>
+                <span class="method-name">test_a_proche_zero_positif_b_proche_zero_positif_c_normal_negatif</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_null_c_proche_zero_negatif</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_tres_proche_zero_positif_c_tres_proche_zero_positif</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_normal_negatif_c_tres_proche_zero_negatif</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_negatif_tres_grand_c_null</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_tres_proche_zero_negatif_c_normal_positif</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_negatif</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_proche_zero_negatif_c_proche_zero_positif</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_proche_zero_negatif_c_tres_proche_zero_positif</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_normal_positif_c_negatif_tres_grand</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_proche_zero_positif_c_tres_proche_zero_negatif</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_positif_tres_grand_c_normal_positif</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_tres_proche_zero_positif_c_negatif_tres_grand</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_proche_zero_negatif_c_normal_positif</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_tres_proche_zero_positif_c_normal_negatif</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_proche_zero_negatif_c_proche_zero_negatif</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_tres_proche_zero_positif_c_null</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_negatif</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_normal_negatif_c_negatif_tres_grand</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_tres_proche_zero_negatif_c_tres_proche_zero_negatif</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_normal_positif_c_tres_proche_zero_positif</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_negatif_tres_grand_c_negatif_tres_grand</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_normal_positif_c_proche_zero_positif</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_proche_zero_positif_c_negatif_tres_grand</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_proche_zero_positif_c_tres_proche_zero_positif</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_null_c_proche_zero_positif</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_normal_negatif_c_normal_positif</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_normal_negatif</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_tres_proche_zero_positif_c_tres_proche_zero_negatif</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_tres_proche_zero_negatif_c_null</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_normal_negatif_c_null</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_proche_zero_negatif_c_null</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_null_c_tres_proche_zero_negatif</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_positif_tres_grand_c_tres_proche_zero_negatif</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_normal_positif_c_tres_proche_zero_negatif</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_negatif_c_proche_zero_negatif</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_null_c_positif_tres_grand</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_positif_tres_grand_c_proche_zero_negatif</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_normal_negatif_c_tres_proche_zero_positif</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_proche_zero_positif_c_proche_zero_negatif</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_positif_tres_grand_c_normal_positif</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_normal_positif_c_normal_negatif</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_null_c_normal_negatif</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_tres_proche_zero_positif_c_proche_zero_positif</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_tres_proche_zero_negatif_c_negatif_tres_grand</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_proche_zero_negatif_c_negatif_tres_grand</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_negatif_tres_grand_c_proche_zero_positif</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_tres_proche_zero_negatif_c_tres_proche_zero_positif</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_negatif_tres_grand_c_positif_tres_grand</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_tres_proche_zero_positif_c_negatif_tres_grand</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_proche_zero_negatif_c_normal_negatif</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_positif_tres_grand_c_tres_proche_zero_positif</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_tres_proche_zero_positif_c_normal_positif</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_normal_negatif_c_proche_zero_positif</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_negatif_tres_grand_c_normal_positif</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_positif_tres_grand_c_null</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_normal_positif_c_proche_zero_negatif</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_negatif_tres_grand_c_tres_proche_zero_negatif</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_null_c_negatif_tres_grand</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_positif_b_null_c_normal_positif</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_normal_negatif_c_proche_zero_positif</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_positif_c_positif_tres_grand</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_negatif_tres_grand_c_proche_zero_negatif</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_normal_positif_c_normal_positif</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_normal_negatif_c_positif_tres_grand</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_a_null_b_proche_zero_positif_c_null</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_null_c_null</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_tres_proche_zero_positif_c_proche_zero_negatif</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_proche_zero_negatif_c_positif_tres_grand</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_positif_tres_grand_c_negatif_tres_grand</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_normal_positif_c_null</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_proche_zero_positif_c_positif_tres_grand</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_negatif_b_tres_proche_zero_positif_c_positif_tres_grand</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_tres_proche_zero_negatif_c_proche_zero_positif</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_positif_tres_grand_c_normal_negatif</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_negatif_tres_grand_b_tres_proche_zero_negatif_c_proche_zero_negatif</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_positif_tres_grand_c_proche_zero_positif</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_proche_zero_positif_c_normal_positif</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_negatif_c_normal_negatif</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_positif_tres_grand_b_proche_zero_positif_c_proche_zero_positif</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_positif_tres_grand_c_positif_tres_grand</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_negatif_b_normal_positif_c_normal_positif</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_tres_proche_zero_positif_b_tres_proche_zero_negatif_c_positif_tres_grand</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_normal_negatif_b_negatif_tres_grand_c_tres_proche_zero_positif</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_null_c_tres_proche_zero_positif</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_a_proche_zero_positif_b_tres_proche_zero_negatif_c_proche_zero_negatif</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.TestSolver</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">buildTestSolver1</span>
+                <span class="method-start">1113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">buildTestSolver</span>
-                <span class="method-start">2 ms</span>
+                <span class="method-start">1114 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.AppTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldAnswerWithTrue</span>
-                <span class="method-start">21109 ms</span>
+                <span class="method-start">21909 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

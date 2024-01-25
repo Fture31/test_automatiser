@@ -13,7 +13,7 @@ import io.cucumber.java.en.When;
 
 
 
-public class step1 {
+public class cucumber {
     private WebDriver driver;
     private double number1;
     private double number2 ; 

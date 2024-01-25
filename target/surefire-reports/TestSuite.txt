@@ -1,4 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.757 s - in TestSuite
+Tests run: 92, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 46.818 s <<< FAILURE! - in TestSuite
+test_a_null_b_tres_proche_zero_negatif_c_normal_positif on test_a_null_b_tres_proche_zero_negatif_c_normal_positif(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.069 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<2.2310431465357116E8> but was:<4.482208251116821E-9>
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_negatif_c_normal_positif(TestCases.java:200)
+
+test_a_null_b_tres_proche_zero_positif_c_normal_negatif on test_a_null_b_tres_proche_zero_positif_c_normal_negatif(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.031 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<5.002003811009967E8> but was:<1.9991987966880167E-9>
+	at com.example.TestCases.test_a_null_b_tres_proche_zero_positif_c_normal_negatif(TestCases.java:256)
+
+test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif on test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.002 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<-3.2342246428459196E-7> but was:<-3091931.174947889>
+	at com.example.TestCases.test_a_null_b_proche_zero_negatif_c_tres_proche_zero_negatif(TestCases.java:216)
+
+test_a_null_b_normal_positif_c_proche_zero_positif on test_a_null_b_normal_positif_c_proche_zero_positif(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.032 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<-0.004638477876619339> but was:<-215.58796368105777>
+	at com.example.TestCases.test_a_null_b_normal_positif_c_proche_zero_positif(TestCases.java:224)
+
+test_a_null_b_positif_tres_grand_c_proche_zero_negatif on test_a_null_b_positif_tres_grand_c_proche_zero_negatif(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.016 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<2.4466366339456265E-9> but was:<4.087243631218447E8>
+	at com.example.TestCases.test_a_null_b_positif_tres_grand_c_proche_zero_negatif(TestCases.java:240)
+
+test_a_null_b_null_c_negatif_tres_grand on test_a_null_b_null_c_negatif_tres_grand(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.014 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<Infinity> but was:<0.0>
+	at com.example.TestCases.test_a_null_b_null_c_negatif_tres_grand(TestCases.java:128)
+
+test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif on test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.006 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<1.6806347941034085E-15> but was:<5.950132673133689E14>
+	at com.example.TestCases.test_a_null_b_negatif_tres_grand_c_tres_proche_zero_positif(TestCases.java:248)
+
+test_a_null_b_proche_zero_positif_c_null on test_a_null_b_proche_zero_positif_c_null(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.003 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<-0.0> but was:<-Infinity>
+	at com.example.TestCases.test_a_null_b_proche_zero_positif_c_null(TestCases.java:56)
+
+test_a_null_b_normal_negatif_c_positif_tres_grand on test_a_null_b_normal_negatif_c_positif_tres_grand(com.example.TestCases)(com.example.TestCases)  Time elapsed: 0.002 s  <<< FAILURE!
+org.junit.internal.ArrayComparisonFailure: arrays first differed at element [0]; expected:<1026975.7894841089> but was:<9.737327892630653E-7>
+	at com.example.TestCases.test_a_null_b_normal_negatif_c_positif_tres_grand(TestCases.java:232)
+
