@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-25T13:14:13 WAT" name="Surefire suite" finished-at="2024-01-25T13:15:02 WAT" duration-ms="49001">
+    <groups>
+    </groups>
+    <test started-at="2024-01-25T13:14:13 WAT" name="Surefire test" finished-at="2024-01-25T13:15:02 WAT" duration-ms="49001">
+      <class name="com.example.AppTest">
+        <test-method signature="shouldAnswerWithTrue()" started-at="2024-01-25T13:14:44 WAT" name="shouldAnswerWithTrue" finished-at="2024-01-25T13:14:44 WAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- com.example.AppTest -->
+      <class name="com.example.TestSolver">
+        <test-method signature="buildTestSolver1()" started-at="2024-01-25T13:14:13 WAT" name="buildTestSolver1" finished-at="2024-01-25T13:14:39 WAT" duration-ms="25728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildTestSolver1 -->
+        <test-method signature="buildTestSolver()" started-at="2024-01-25T13:14:13 WAT" name="buildTestSolver" finished-at="2024-01-25T13:14:44 WAT" duration-ms="30934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildTestSolver -->
+      </class> <!-- com.example.TestSolver -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
